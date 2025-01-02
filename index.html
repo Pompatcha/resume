@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume Patcharin Chanaphukdee</title>
+    <style>
+      @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1,
+.card-panel,
+.card,
+.site-header .header-badge {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-1-half {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-5,
+.site-header .header-badge:hover {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+/*------------------------------------------------------------
+  Base Style
+------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+@media print {
+  .noPrint {
+    display: none;
+  }
+}
+
+@media screen {
+  .noScreen {
+    display: none;
+  }
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+
+/*making font-sizes base 10*/
+
+#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.btn-res {
+  margin: 5px;
+}
+
+.smGlobalBtn {
+  /* global button class */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 2px #999;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+
+/* facebook button class*/
+
+.facebookBtn {
+  background: #4060A5;
+}
+
+.facebookBtn:before {
+  /* use :before to add the relevant icons */
+  font-family: "FontAwesome";
+  content: "\f09a";
+  /* add facebook icon */
+}
+
+.facebookBtn:hover {
+  color: #4060A5;
+  background: #fff;
+}
+
+
+/* twitter button class*/
+
+.twitterBtn {
+  background: #00ABE3;
+}
+
+.twitterBtn:before {
+  font-family: "FontAwesome";
+  content: "\f099";
+  /* add twitter icon */
+}
+
+.twitterBtn:hover {
+  color: #00ABE3;
+  background: #fff;
+}
+
+
+/* google plus button class*/
+
+.googleplusBtn {
+  background: #e64522;
+}
+
+.googleplusBtn:before {
+  font-family: "FontAwesome";
+  content: "\f0d5";
+  /* add googleplus icon */
+}
+
+.googleplusBtn:hover {
+  color: #e64522;
+  background: #fff;
+}
+
+
+/* linkedin button class*/
+
+.linkedinBtn {
+  background: #0094BC;
+}
+
+.linkedinBtn:before {
+  font-family: "FontAwesome";
+  content: "\f0e1";
+  /* add linkedin icon */
+}
+
+.linkedinBtn:hover {
+  color: #0094BC;
+  background: #fff;
+}
+
+
+/* pinterest button class*/
+
+.pinterestBtn {
+  background: #cb2027;
+}
+
+.pinterestBtn:before {
+  font-family: "FontAwesome";
+  content: "\f0d2";
+  /* add pinterest icon */
+}
+
+.pinterestBtn:hover {
+  color: #cb2027;
+  background: #fff;
+}
+
+
+/* tumblr button class*/
+
+.tumblrBtn {
+  background: #3a5876;
+}
+
+.tumblrBtn:before {
+  font-family: "FontAwesome";
+  content: "\f173";
+  /* add tumblr icon */
+}
+
+.tumblrBtn:hover {
+  color: #3a5876;
+  background: #fff;
+}
+
+
+/* email button class*/
+
+.emailBtn {
+  background: #e88845;
+}
+
+.emailBtn:before {
+  font-family: "FontAwesome";
+  content: "\f003 ";
+  /* add rss icon */
+}
+
+.emailBtn:hover {
+  color: #e88845;
+  background: #fff;
+}
+
+html {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #37474F;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+/*setting up font sizes and base font family*/
+body {
+  minheight: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("https://i.imgur.com/DxNUpSd.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.outer {
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, #37474F));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, #37474F 100%);
+  /* W3C */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00', GradientType=0);
+  /* IE6-9 */
+}
+.card-panel {
+  transition: box-shadow .25s;
+  padding: 20px;
+  margin: 10px 0 20px 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.card {
+  margin: 10px 0 20px 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+}
+.card .card-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+.card .card-title.activator {
+  cursor: pointer;
+}
+.card .card-content {
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+
+.card .card-content .card-title {
+  line-height: 48px;
+}
+
+
+/*------------------------------------------------------------
+  Buttons/Components
+------------------------------------------------------------*/
+
+.btn,
+button,
+[type=submit] {
+  margin: 10px;
+  padding: 12px 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #EF6C00;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.btn:hover,
+button:hover,
+[type=submit]:hover {
+  -webkit-transition: all 60ms ease;
+  transition: all 60ms ease;
+  opacity: .85;
+}
+
+.btn:active,
+button:active,
+[type=submit]:active {
+  -webkit-transition: all 60ms ease;
+  transition: all 60ms ease;
+  -webkit-transform: scale(0.97);
+  transform: scale(0.97);
+  opacity: .75;
+}
+
+.btn:focus,
+button:focus,
+[type=submit]:focus {
+  outline: none;
+}
+
+
+/* Button Outline */
+
+.btn-outline {
+  border: 3px solid #fff;
+  color: #fff;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  color: #000;
+  background: #fff;
+}
+
+.btn-outline-inverted {
+  border: 3px solid #000;
+  color: #000;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+
+.btn-outline-inverted:hover,
+.btn-outline-inverted:active {
+  color: #fff;
+  background: #000;
+}
+
+/*------------------------------------------------------------
+  Site Style
+------------------------------------------------------------*/
+
+.site-header {
+  text-align: center;
+}
+
+.site-header .wrapper {
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+.site-header .wrapper .site-title {
+  text-decoration: none;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.site-header .header-badge {
+  border-radius: 50%;
+  border: 12px #fff solid;
+  height: 200px;
+  width: 200px;
+  background: url("hhttps://i.ibb.co/GtHT6rc/Screenshot-2567-07-29-at-08-13-11.png") center center no-repeat #fff;
+  background-size: 50px 50px;
+  display: inline-block;
+  margin-bottom: -140px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.site-header .header-badge img {
+  /* Center the image within the element */
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.site-header .header-badge:hover {
+  transition: 0.3s;
+}
+
+.site-header .header-badge:hover img {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.page-content {
+  margin: 30px auto;
+  width: 980px;
+}
+
+.page-content .top {
+  text-align: center;
+  padding: 120px 30px 30px;
+}
+
+.page-content .top a.email {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #EF6C00;
+}
+
+.page-content .top p.description {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.say-body {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.page-content .posts .card-title {
+  color: #EF6C00;
+  display: block;
+  width: 100%;
+  border-bottom: #EF6C00 solid 1px;
+}
+
+.page-content .posts .post-list {
+  margin: 0;
+  padding: 0;
+}
+
+.page-content .posts .post-list li {
+  padding: 15px 0;
+  border-bottom: #ddd solid 1px;
+}
+
+.page-content .posts .post-list li .post-meta {
+  float: right;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.page-content .posts .post-list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+}
+
+.page-content .posts .rss-subscribe {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.page-content .posts .rss-subscribe a {
+  text-decoration: none;
+  color: #EF6C00;
+}
+
+.post .card-content {
+  padding: 80px 20px;
+}
+
+.footer-heading {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 2.6rem;
+  padding-bottom: 0.5em;
+  font-weight: 300;
+}
+
+@media (max-width: 1050px) {
+  .page-content {
+    margin: 30px 2%;
+    width: 96%;
+  }
+}
+ .ul {
+            list-style-type: bullet;  /* Adds bullet points */
+            padding-left: 20px;  /* Adds indentation to the list */
+        }
+
+        li {
+            font-size: 14px;  /* Sets the font size */
+            line-height: 1.6;  /* Adjusts line spacing */
+        }
+    </style>
+    <body>
+  </head>
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+<div class="outer">
+  <header class="site-header">
+    <div class="wrapper">
+
+      <a class="site-title" href="#">Resume</a>
+      <div class="container noPrint">
+        <a href="#about" class="btn btn-danger">About</a>
+        <a href="#exp" class="btn btn-danger">Experience</a>
+        <a href="#skills" class="btn btn-danger">Education</a>
+        <a href="#skills" class="btn btn-danger">Skills</a>
+      </div>
+    </div>
+
+    <div class="header-badge">
+      <a data-toggle="modal" data-target="#shareModal">
+        <img height="100%" width="100" src="https://i.ibb.co/GtHT6rc/Screenshot-2567-07-29-at-08-13-11.png">
+      </a>
+    </div>
+  </header>
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="home">
+        <div class="top card">
+          <a class="email" href="mailto:organ_29@hotmail.com">Patcharin Chanaphukdee</a>
+          <p class="say-body">Procurement Specialist with over 18 years of experience in sourcing, negotiating, and managing supplier relationships across [industry sectors]. Skilled in optimizing purchasing processes, reducing costs, and ensuring timely delivery of high-quality materials and services. Adept at identifying cost-saving opportunities, managing contracts, and maintaining compliance with procurement policies. Proven track record of driving operational efficiencies and building strong vendor partnerships to support organizational goals.</p>
+          <a href="respdf.pdf" style="display: block; width: 45%; max-width: 250px; margin-left: auto; margin-right: auto" onclick="window.print()" class="btn btn-res">Print</a>
+        </div>
+        <a id="about"></a>
+        <div class="posts card">
+          <div class="card-content white-text">
+            <span class="card-title">What I have to say about myself...</span>
+
+            <ul class="post-list">
+
+              <div>
+                <p class="say-body">As a results-driven Procurement Specialist with 18 years of experience, I have developed a comprehensive expertise in sourcing, contract management, and vendor relations across diverse industries such as [specific industries, e.g., manufacturing, healthcare, technology. My focus has been on optimizing supply chain processes, driving cost savings, and ensuring that procurement practices align with organizational goals. I am skilled in negotiating favorable terms, managing supplier performance, and maintaining compliance with regulatory standards. With a proven track record of improving procurement efficiency and building strong supplier partnerships, I am committed to contributing to the growth and success of your organization.</p>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+        <div class="posts card">
+            <span class="card-title">Education</span>
+            <h3><a href="https://www.stamford.edu">Stamford University</a> </h3><p><small>Years: [2015-2018]</small></p>
+                <div>
+                  </p>Master degree of business administration is a professional postgraduate degree focused on business administration.</div>
+                  <p>Journal research: The relationship Customer satisfaction on
+                    Marketing Mix 7p Study knowledge to business marketing gain
+                    customer satisfaction lead to more income to business which all
+                    integrated customer satisfaction using service model and
+                    marketing model. I am studying a relationship between
+                    Japanese language and Thai Language on customer
+                    satisfaction, to find new model after discussed lead to found a
+                    new knowledge for understand trend on customer prospective.</p>
+              <h3><a href="https://www.ru.ac.th/th/Faculty/8">Ramkhamhaeng University</a></h3>
+                <p><small>Years: [2005-2007]</small>
+                  <p>Bachelor Degree of Mass Communication (Major) Japanese (Minor) student intership at Bangkok Eagle Eings co. ltd sale cooperation with automotive part in Austria company.</p>
+                </div>
+        <a id="exp"></a>
+        <div class="posts card">
+          <div class="card-content white-text">
+            <span class="card-title">Experience</span>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width:99%">
+                    <h3></h3><a href="#">Yanmar S.P. CO., LTD</a>
+                    <div>
+                      <p>Planning & Administration Section of Procurement Department</p>
+                  </div>
+                </div>
+              </li>
+            <ul>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width:98%">
+                    Create the professional data with data dashboard with advance skills advance formula to made report.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width:97%">
+                    Supplier compliance management
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width:93%">
+                    Cost reduction management
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    Agreement management (Supplier and supply agreement, Environment, Confidentiality agreement)
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                    Strength procurement work organization
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width:87%">
+                    Develop a strategies for procurement such as supplier restructuring, localization, supplier changing etc.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    Supplier evaluation
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width:74%">
+                    Implement procurement work process (i.e. packing standard, sourcing, supplier database, price comparison etc.)
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">Procurement activity budget management</div>
+                </div>
+              </li>
+              <li>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">ISO system internal auditor</div>
+                </div>
+                <div>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+            <a id="skills"></a>
+            <div class="posts card">
+              <div class="card-content white-text">
+                <span class="card-title">Skills</span>
+                <ul>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width:98%">
+                        Microsoft Power Apps
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width:97%">
+                        Microsoft Power Query
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width:93%">
+                        HTML
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                       Microsoft Power BI
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                      Microsoft Excel
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                      Team leadership and team management
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                      Diversity works
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                      Project management
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                      Global coorabration 
+                      </div>
+                    </div>
+                  </li>
+                  
+                  
+                                    
+           
+            <!--ONLY FOR PRINTER -->
+            <ul class="noScreen post-list">
+              <li>
+                <strong>CSS</strong>
+              </li>
+              <li>
+                <strong>Git / Github</strong>
+              </li>
+              <li>
+                <strong>HTML</strong>
+              </li>
+  
+              <li>
+                <strong>PhotoShop</strong>
+              </li>
+              <li>
+                <strong>JavaScript</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="site-footer">
+
+    <div class="wrapper">
+
+      <span class="footer-heading">Procurement specialist| Resume</span>
+
+    </div>
+
+  </footer>
+
+</div>
+<div class="modal fade" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="social">
+          <a class="facebookBtn smGlobalBtn" href="##"></a>
+          <a class="twitterBtn smGlobalBtn" href="h##"></a>
+          <a class="googleplusBtn smGlobalBtn" href="##"></a>
+          <a class="pinterestBtn smGlobalBtn" href="##"></a>
+          <a class="tumblrBtn smGlobalBtn" href="https://www.linkedin.com/in/patcha-chanaphukdee-813340128/"></a>
+          <a class="emailBtn smGlobalBtn" href="##"></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
